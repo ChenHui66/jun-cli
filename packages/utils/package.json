@@ -1,0 +1,19 @@
+{
+  "name": "@jun-cli/utils",
+  "version": "1.0.0",
+  "description": "jun-cli utils",
+  "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
