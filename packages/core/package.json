@@ -1,6 +1,6 @@
 {
   "name": "@jun-cli/core",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "jun-cli core",
   "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
   "homepage": "",
@@ -16,5 +16,5 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "1149cc3882536e0a86549f0ed95211f3a9b5700a"
+  "gitHead": "af81e85f6836641131cd6051f5203ab2d52ad12a"
 }
