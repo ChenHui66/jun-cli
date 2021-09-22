@@ -5,7 +5,7 @@
   "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/utils.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -19,5 +19,8 @@
   "gitHead": "af81e85f6836641131cd6051f5203ab2d52ad12a",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
   }
 }
