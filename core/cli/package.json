@@ -22,6 +22,7 @@
     "@jun-cli/get-npm-info": "file:../../utils/get-npm-info",
     "@jun-cli/log": "file:../../utils/log",
     "@jun-cli/init": "file:../../commands/init",
+    "@jun-cli/exec": "file:../exec",
     "colors": "^1.4.0",
     "commander": "^6.2.1",
     "dotenv": "^10.0.0",

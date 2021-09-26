@@ -1,7 +1,10 @@
 'use strict';
 
-function utils() {
-    // TODO
+// 判断数据类型是否为 object
+function isObject(o) {
+    return Object.prototype.toString.call(o) === '[object Object]'
 }
 
-module.exports = utils;
+module.exports = {
+    isObject
+};

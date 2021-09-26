@@ -10,6 +10,7 @@ const userHome = require('user-home')
 const pathExists = require('path-exists').sync
 const commander = require('commander')
 const init = require('@jun-cli/init')
+const exec = require('@jun-cli/exec')
 let args, config
 
 const program = new commander.Command()
@@ -97,7 +98,7 @@ function registerCommand() {
     program
         .command('init [projectName]')
         .option('-f --force', '是否强制初始化项目')
-        .action(init)
+        .action(exec)
         // .action((projectName, cmdObj) => {
         //     console.log('init', projectName, cmdObj.force)
         // })
@@ -127,10 +128,8 @@ function registerCommand() {
     })
 
     program.parse(process.argv)
-
     // 这种判断兼容jun-cli -d  也可以输出帮助文案（program.argv去判断不支持）
     if (program.args && program.args.length < 1) {
-        console.log(program)
         program.outputHelp()
         // 显示一个空行 看起来更舒服
         console.log()
