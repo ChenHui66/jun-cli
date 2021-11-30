@@ -9,7 +9,6 @@ const semver = require('semver')
 const userHome = require('user-home')
 const pathExists = require('path-exists').sync
 const commander = require('commander')
-const init = require('@jun-cli/init')
 const exec = require('@jun-cli/exec')
 let args, config
 
@@ -21,16 +20,12 @@ async function core() {
         registerCommand()
     } catch (err) {
         log.error(err.message)
+        if (program.debug) {
+            console.log(err)
+        }
     }
 }
 
-// 检查node版本号
-function checkNodeVersion() {
-    const currentVersion = process.version
-    if (!semver.gte(currentVersion, LOWEST_NODE_VERSION)) {
-        throw new Error(colors.red(`jun-cli需要安装v${LOWEST_NODE_VERSION}以上的node.js版本`))
-    }
-}
 
 // 检查本项目的版本号
 function checkPkgVersion() {
@@ -93,18 +88,18 @@ function registerCommand() {
         .usage('<command> [options]') // 配置 教手架的使用结构 说明
         .version(pkg.version)
         .option('-d, --debug', '是否开启调试模式', false)
-        .option('-tp, --targetPath <targetPath>','是否指定本地调试文件路径', '')
+        .option('-tp, --targetPath <targetPath>', '是否指定本地调试文件路径', '')
     // 注册命令init
     program
         .command('init [projectName]')
         .option('-f --force', '是否强制初始化项目')
         .action(exec)
-        // .action((projectName, cmdObj) => {
-        //     console.log('init', projectName, cmdObj.force)
-        // })
+    // .action((projectName, cmdObj) => {
+    //     console.log('init', projectName, cmdObj.force)
+    // })
     // 开启debug模式
-    program.on('option:debug', function() {
-        if(program.debug) {
+    program.on('option:debug', function () {
+        if (program.debug) {
             process.env.LOG_LEVEL = 'verbose'
         } else {
             process.env.LOG_LEVEL = 'info'
@@ -113,7 +108,7 @@ function registerCommand() {
     })
 
     // 指定targetpath 通过属性事件的监听，在执行业务逻辑init之前便把targetPath存入环境变量，方便其他进程拿取
-    program.on('option:targetPath', function() {
+    program.on('option:targetPath', function () {
         process.env.CLI_TARGET_PATH = program.targetPath;
     })
 
@@ -122,7 +117,7 @@ function registerCommand() {
     program.on('command:*', function (obj) {
         const availableCommands = program.commands.map(cwd => cwd.name())
         console.log(colors.red('未知的命令：' + obj[0]))
-        if(availableCommands.length > 0) {
+        if (availableCommands.length > 0) {
             console.log(colors.red('可用命令：' + availableCommands.join(',')))
         }
     })
@@ -138,7 +133,6 @@ function registerCommand() {
 
 async function prepare() {
     checkPkgVersion()
-    checkNodeVersion()
     checkRoot()
     checkUserHome()
     checkEnv()

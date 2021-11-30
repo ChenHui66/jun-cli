@@ -10,6 +10,10 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "dependencies": {
+    "@jun-cli/command": "file:../../models/command",
+    "@jun-cli/log": "file:../../utils/log"
+  },
   "files": [
     "lib"
   ],
