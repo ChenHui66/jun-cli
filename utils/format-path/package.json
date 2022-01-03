@@ -25,5 +25,9 @@
   },
   "bugs": {
     "url": "https://github.com/ChenHui66/jun-cli/issues"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "semver": "^7.3.5"
   }
 }
