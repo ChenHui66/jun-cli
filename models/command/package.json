@@ -1,6 +1,6 @@
 {
   "name": "@jun-cli/command",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "@jun-cli command",
   "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
   "homepage": "https://github.com/ChenHui66/jun-cli#readme",
@@ -27,8 +27,8 @@
     "url": "https://github.com/ChenHui66/jun-cli/issues"
   },
   "dependencies": {
-    "@jun-cli/log": "^1.0.6",
-    "@jun-cli/utils": "^1.0.6",
+    "@jun-cli/log": "^1.0.7",
+    "@jun-cli/utils": "^1.0.7",
     "colors": "^1.4.0",
     "fs-extra": "^10.0.0",
     "semver": "^7.3.5"

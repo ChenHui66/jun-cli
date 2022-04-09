@@ -1,6 +1,6 @@
 {
   "name": "@jun-cli/init",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "jun-cli init",
   "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
   "homepage": "https://github.com/ChenHui66/jun-cli#readme",
@@ -11,8 +11,8 @@
     "test": "__tests__"
   },
   "dependencies": {
-    "@jun-cli/command": "^1.0.6",
-    "@jun-cli/log": "^1.0.6",
+    "@jun-cli/command": "^1.0.7",
+    "@jun-cli/log": "^1.0.7",
     "fs-extra": "^10.0.0",
     "inquirer": "^8.2.0",
     "semver": "^7.3.5"

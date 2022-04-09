@@ -1,6 +1,6 @@
 {
   "name": "@jun-cli/exec",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "jun-cli execute package",
   "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
   "homepage": "https://github.com/ChenHui66/jun-cli#readme",
@@ -27,8 +27,8 @@
     "url": "https://github.com/ChenHui66/jun-cli/issues"
   },
   "dependencies": {
-    "@jun-cli/log": "^1.0.6",
-    "@jun-cli/package": "^1.0.6",
+    "@jun-cli/log": "^1.0.7",
+    "@jun-cli/package": "^1.0.7",
     "fs-extra": "^10.0.0",
     "semver": "^7.3.5"
   },
