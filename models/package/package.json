@@ -1,6 +1,6 @@
 {
   "name": "@jun-cli/package",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "jun-cli npm modules",
   "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
   "homepage": "https://github.com/ChenHui66/jun-cli#readme",
@@ -27,9 +27,9 @@
     "url": "https://github.com/ChenHui66/jun-cli/issues"
   },
   "dependencies": {
-    "@jun-cli/format-path": "^1.0.5",
-    "@jun-cli/get-npm-info": "^1.0.5",
-    "@jun-cli/utils": "^1.0.5",
+    "@jun-cli/format-path": "^1.0.6",
+    "@jun-cli/get-npm-info": "^1.0.6",
+    "@jun-cli/utils": "^1.0.6",
     "fs-extra": "^10.0.0",
     "npminstall": "^4.10.0",
     "path-exists": "^4.0.0",
