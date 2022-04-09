@@ -1,6 +1,6 @@
 {
   "name": "@jun-cli/core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "jun-cli core",
   "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
   "homepage": "",
@@ -19,10 +19,10 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@jun-cli/exec": "^1.0.4",
+    "@jun-cli/exec": "^1.0.5",
     "@jun-cli/get-npm-info": "file:../../utils/get-npm-info",
-    "@jun-cli/init": "^1.0.4",
-    "@jun-cli/log": "^1.0.4",
+    "@jun-cli/init": "^1.0.5",
+    "@jun-cli/log": "^1.0.5",
     "colors": "^1.4.0",
     "commander": "^6.2.1",
     "dotenv": "^10.0.0",
