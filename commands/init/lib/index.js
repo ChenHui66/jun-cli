@@ -20,14 +20,24 @@ class initCommand extends Command {
     async exec() {
         try {
             // 准备阶段
-            const ret = await this.prepare()
-            if (ret) {
+            const projectInfo = await this.prepare()
+            if (projectInfo) {
                 // 下载摸板
+                log.verbose('projectInfo', projectInfo)
                 // 安装摸板
             }
         } catch (e) {
             log.error(e.message)
         }
+    }
+
+    // 下载摸板
+    downloadTemplate() {
+        // 1. 通过项目摸板api获取项目摸板信息
+        // 1.1 通过egg.js搭建一套后端系统
+        // 1.2 通过npm存储项目摸板
+        // 1.3 将项目摸板信息存储到mongodb数据库中
+        // 1.4 通过egg.js获取mongodb中的数据并且通过api返回
     }
 
     async prepare() {
@@ -64,6 +74,7 @@ class initCommand extends Command {
     }
 
     async getProjectInfo() {
+        let  projectInfo = {}
         // 选择创建项目或组件
         const {type} = await inquirer.prompt({
             type: 'list',
@@ -81,7 +92,7 @@ class initCommand extends Command {
 
         if (type === TYPE_PROJECT) {
             // 获取项目的基本信息
-            const o = await inquirer.prompt([{
+            const project = await inquirer.prompt([{
                 type: 'input',
                 name: 'projectName',
                 message: '请输入项目名称',
@@ -126,10 +137,14 @@ class initCommand extends Command {
 
                 }
             }])
+            projectInfo = {
+                type,
+                ...project
+            }
         } else if (type === TYPE_COMPONENT) {
 
         }
-        // return 项目的基本信息（Object）
+        return projectInfo
     }
 
     isCwdEmpty() {
