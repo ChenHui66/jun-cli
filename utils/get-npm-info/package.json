@@ -1,5 +1,5 @@
 {
-  "name": "get-npm-info",
+  "name": "@jun-cli/get-npm-info",
   "version": "1.0.4",
   "description": "get-npm-info",
   "author": "ChenHui66 <39741214+ChenHui66@users.noreply.github.com>",
@@ -28,5 +28,6 @@
     "fs-extra": "^10.0.0",
     "semver": "^7.3.5",
     "url-join": "^4.0.1"
-  }
+  },
+  "gitHead": "4461de937f7c80c69a2049b67c15b9fda487b6ac"
 }

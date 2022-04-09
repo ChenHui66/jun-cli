@@ -19,10 +19,10 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@jun-cli/exec": "file:../exec",
+    "@jun-cli/exec": "^1.0.4",
     "@jun-cli/get-npm-info": "file:../../utils/get-npm-info",
-    "@jun-cli/init": "file:../../commands/init",
-    "@jun-cli/log": "file:../../utils/log",
+    "@jun-cli/init": "^1.0.4",
+    "@jun-cli/log": "^1.0.4",
     "colors": "^1.4.0",
     "commander": "^6.2.1",
     "dotenv": "^10.0.0",
@@ -34,7 +34,7 @@
     "semver": "^7.3.5",
     "user-home": "^3.0.0"
   },
-  "gitHead": "af81e85f6836641131cd6051f5203ab2d52ad12a",
+  "gitHead": "4461de937f7c80c69a2049b67c15b9fda487b6ac",
   "publishConfig": {
     "access": "public"
   }

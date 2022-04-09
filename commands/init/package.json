@@ -11,8 +11,8 @@
     "test": "__tests__"
   },
   "dependencies": {
-    "@jun-cli/command": "file:../../models/command",
-    "@jun-cli/log": "file:../../utils/log",
+    "@jun-cli/command": "^1.0.4",
+    "@jun-cli/log": "^1.0.4",
     "fs-extra": "^10.0.0",
     "inquirer": "^8.2.0",
     "semver": "^7.3.5"
@@ -32,5 +32,6 @@
   },
   "bugs": {
     "url": "https://github.com/ChenHui66/jun-cli/issues"
-  }
+  },
+  "gitHead": "4461de937f7c80c69a2049b67c15b9fda487b6ac"
 }

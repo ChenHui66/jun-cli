@@ -22,7 +22,7 @@
     "npmlog": "^4.1.2",
     "semver": "^7.3.5"
   },
-  "gitHead": "af81e85f6836641131cd6051f5203ab2d52ad12a",
+  "gitHead": "4461de937f7c80c69a2049b67c15b9fda487b6ac",
   "publishConfig": {
     "access": "public"
   }

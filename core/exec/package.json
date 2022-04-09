@@ -27,9 +27,10 @@
     "url": "https://github.com/ChenHui66/jun-cli/issues"
   },
   "dependencies": {
-    "@jun-cli/log": "file:../../utils/log",
-    "@jun-cli/package": "file:../../models/package",
+    "@jun-cli/log": "^1.0.4",
+    "@jun-cli/package": "^1.0.4",
     "fs-extra": "^10.0.0",
     "semver": "^7.3.5"
-  }
+  },
+  "gitHead": "4461de937f7c80c69a2049b67c15b9fda487b6ac"
 }
