@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@jun-cli/exec": "^1.0.5",
-    "@jun-cli/get-npm-info": "file:../../utils/get-npm-info",
+    "@jun-cli/get-npm-info": "^1.0.5",
     "@jun-cli/init": "^1.0.5",
     "@jun-cli/log": "^1.0.5",
     "colors": "^1.4.0",
@@ -34,7 +34,7 @@
     "semver": "^7.3.5",
     "user-home": "^3.0.0"
   },
-  "gitHead": "4461de937f7c80c69a2049b67c15b9fda487b6ac",
+  "gitHead": "22e5bc46791f2481e4e4d413f115aa1676ba6967",
   "publishConfig": {
     "access": "public"
   }
